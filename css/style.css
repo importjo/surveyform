@@ -1,3 +1,57 @@
-#survey-form {
+#container {
+  max-width: 960px;
+  margin: auto;
+}
 
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#survey-form {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "number number"
+    "select select"
+    "radio radio"
+    "check check"
+    "comment comment"
+    "submit submit";
+}
+
+#name {
+  grid-area: name;
+}
+
+#email {
+  grid-area: email;
+}
+
+#number {
+  grid-area: number;
+}
+
+#select {
+  grid-area: select;
+}
+
+#radio {
+  grid-area: radio;
+}
+
+#check {
+  grid-area: check;
+} 
+
+#comment {
+  grid-area: comment;
+} 
+
+#submit {
+  grid-area: submit;
 }
