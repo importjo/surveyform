@@ -29,23 +29,23 @@
 
 @media (max-width: 450px) {
   #survey-form {
-  grid-template-areas:
-  "name"
-  "email"
-  "number"
-  "select"
-  "radio"
-  "check"
-  "comment"
-  "submit";
+    grid-template-areas:
+      "name"
+      "email"
+      "number"
+      "select"
+      "radio"
+      "check"
+      "comment"
+      "submit";
   }
 }
 
 @media (max-width: 450px) {
-#email-container {
-  margin-top: 10px;
-  text-align: left !important;
-}
+  #email-container {
+    margin-top: 10px;
+    text-align: left !important;
+  }
 }
 
 .response {
@@ -93,12 +93,12 @@
 #check-container {
   text-align: left;
   grid-area: check;
-} 
+}
 
 #comment-container {
   text-align: left;
   grid-area: comment;
-} 
+}
 
 #text-area-label {
   display: block;
