@@ -30,10 +30,11 @@
           <label id="email-label" for="email">Email:</label>
           <input id="email" type="email" placeholder="email" required />
           </div>
-          <div id="number-container">
-          <label id="number-label" for="number">Number:</label>
+          <div id="number-container" class="container-spacing">
+          <label id="number-label" for="number">1. First question:</label>
           <input
-            id="number"
+          id="number"
+          class="response"
             type="number"
             placeholder="number"
             min="1"
@@ -41,35 +42,38 @@
             required
           />
           </div>
-          <div id="select-container">
-          <label id="dropdown-label" for="dropdown">List:</label>
-          <select id="dropdown">
+          <div id="select-container" class="container-spacing">
+          <label id="dropdown-label" for="dropdown">2. Second question:</label>
+          <select id="dropdown" class="response">
             <option value="test1">test1</option>
             <option value="test2">test2</option>
           </select>
           </div>
-          <div id="radio-container">
+          <div id="radio-container" class="container-spacing">
+          <label id="radio-question-label">3. Third question.</label>
           <div>
           <label for="orange">
-            <input id="orange" type="radio" name="fruit" value="orange" />Orange
+            <input id="orange" class="response" type="radio" name="fruit" value="orange" />Orange
           </label>
           </div>
           <div>
           <label for="orange">
-            <input id="apple" type="radio" name="fruit" value="apple" />Apple
+            <input id="apple" class="response" type="radio" name="fruit" value="apple" />Apple
           </label>
           </div>
           </div>
-          <div id="check-container">
+          <div id="check-container" class="container-spacing">
+          <label id="check-question-label">4. Fourth question.</label>
           <div>
           <label for="shy">
-            <input id="shy" type="checkbox" name="personality" value="shy" />Shy
+            <input id="shy" class="response" type="checkbox" name="personality" value="shy" />Shy
           </label>
           </div>
           <div>
           <label for="angry">
             <input
               id="angry"
+              class="response"
               type="checkbox"
               name="personality"
               value="angry"
@@ -77,10 +81,9 @@
           </label>
           </div>
           </div>
-          <div id="comment-container">
-          <label for="text-area">Tell us your story:</label>
+          <div id="comment-container" class="container-spacing">
+          <label id="text-area-label" for="text-area">Leave us a comment:</label>
           <textarea id="text-area" name="text-area" rows="5" cols="33">
-It was a dark and stormy night...
 </textarea
           >
           </div>

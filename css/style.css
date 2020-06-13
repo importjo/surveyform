@@ -1,5 +1,5 @@
 #container {
-  max-width: 960px;
+  max-width: 760px;
   margin: auto;
 }
 
@@ -12,6 +12,9 @@
 }
 
 #survey-form {
+  border-radius: 7px;
+  padding: 10px;
+  box-shadow: 0 0 10px gray;
   text-align: center;
   display: grid;
   grid-template-areas:
@@ -24,33 +27,87 @@
     "submit submit";
 }
 
+@media (max-width: 450px) {
+  #survey-form {
+  grid-template-areas:
+  "name"
+  "email"
+  "number"
+  "select"
+  "radio"
+  "check"
+  "comment"
+  "submit";
+  }
+}
+
+@media (max-width: 450px) {
+#email-container {
+  margin-top: 10px;
+  text-align: left !important;
+}
+}
+
+.response {
+  margin-left: 20px;
+}
+
+.container-spacing {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #name-container {
+  text-align: left;
   grid-area: name;
 }
 
 #email-container {
+  text-align: right;
   grid-area: email;
 }
 
 #number-container {
+  text-align: left;
   grid-area: number;
 }
 
+#number-label {
+  display: block;
+}
+
 #select-container {
+  text-align: left;
   grid-area: select;
 }
 
+#dropdown-label {
+  display: block;
+}
+
 #radio-container {
+  text-align: left;
   grid-area: radio;
 }
 
 #check-container {
+  text-align: left;
   grid-area: check;
 } 
 
 #comment-container {
+  text-align: left;
   grid-area: comment;
 } 
+
+#text-area-label {
+  display: block;
+}
+
+#text-area {
+  width: 100%;
+  resize: none;
+}
 
 #submit-container {
   grid-area: submit;
