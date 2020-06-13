@@ -1,5 +1,6 @@
 #container {
-  max-width: 760px;
+  font-family: Helvetica;
+  max-width: 660px;
   margin: auto;
 }
 
@@ -12,44 +13,57 @@
 }
 
 #survey-form {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
   border-radius: 7px;
-  padding: 10px;
   box-shadow: 0 0 10px gray;
   text-align: center;
   display: grid;
   grid-template-areas:
     "name email"
-    "number number"
-    "select select"
-    "radio radio"
-    "check check"
+    "question question"
     "comment comment"
     "submit submit";
 }
 
-@media (max-width: 450px) {
+@media (max-width: 595px) {
+  body {
+    margin: 0px;
+  }
   #survey-form {
+    box-shadow: 0 0 0 !important;
     grid-template-areas:
       "name"
       "email"
-      "number"
-      "select"
-      "radio"
-      "check"
+      "question"
       "comment"
       "submit";
   }
-}
 
-@media (max-width: 450px) {
   #email-container {
     margin-top: 10px;
     text-align: left !important;
   }
+
+  .response {
+    margin-left: 20px !important;
+  }
+  
+#name-container {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+#email-container {
+  border-top-right-radius: 0px !important;
+  margin-top: 0px !important;
+}
+
 }
 
 .response {
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 40px;
 }
 
 .container-spacing {
@@ -58,13 +72,33 @@
 }
 
 #name-container {
+  padding: 10px;
+  border-top-left-radius: 7px;
+  background-color: #3399ff;
   text-align: left;
   grid-area: name;
 }
 
+#name-label {
+  color: white;
+}
+
+#email-label {
+  color: white;
+}
+
 #email-container {
+  padding: 10px;
+  border-top-right-radius: 7px;
+  background-color: #3399ff;
   text-align: right;
   grid-area: email;
+}
+
+#questions {
+  grid-area: question;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #number-container {
@@ -74,6 +108,10 @@
 
 #number-label {
   display: block;
+}
+
+#number {
+  width: 50px;
 }
 
 #select-container {
@@ -96,6 +134,7 @@
 }
 
 #comment-container {
+  margin: 10px;
   text-align: left;
   grid-area: comment;
 }
@@ -105,10 +144,13 @@
 }
 
 #text-area {
+  border: 1px solid lightgrey;
+  border-radius: 7px;
   width: 100%;
   resize: none;
 }
 
 #submit-container {
   grid-area: submit;
+  margin-bottom: 10px;
 }
