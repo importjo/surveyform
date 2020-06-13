@@ -7,12 +7,15 @@
   <body>
     <div id="container">
       <header>
-        <h1 id="title">🚀 Space Agency Travel<sup>©</sup></br>Survey form</h1>
+        <h1 id="title">🚀 Space Agency Travel<sup>©</sup><br />Survey form</h1>
       </header>
 
       <main>
         <div>
-          <p id="description">Welcome to the space agency travel survey board. Take some times to answer.</p>
+          <p id="description">
+            Welcome to the space agency travel survey board. Take some times to
+            answer.
+          </p>
         </div>
         <div>
           <form id="survey-form" action="/submit-form">
@@ -31,143 +34,151 @@
               <input id="email" type="email" placeholder="email" required />
             </div>
             <div id="questions">
-            <div id="number-container" class="container-spacing">
-              <label id="number-label" for="number">1. How many times have you been in space?</label>
-              <input
-                id="number"
-                class="response"
-                type="number"
-                placeholder="number"
-                min="1"
-                max="10"
-                required
-              />
-            </div>
-            <div id="select-container" class="container-spacing">
-              <label id="dropdown-label" for="dropdown"
-                >2. Would you go back in space without a permit?</label
-              >
-              <select id="dropdown" class="response">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div id="radio-container" class="container-spacing">
-              <label id="radio-question-label">3. How often did you encounter space debris during your trip?</label>
-              <div>
-                <label for="never">
-                  <input
-                    id="never"
-                    class="response"
-                    type="radio"
-                    name="choice"
-                    value="never"
-                  />Never
-                </label>
+              <div id="number-container" class="container-spacing">
+                <label id="number-label" for="number"
+                  >1. How many times have you been in space?</label
+                >
+                <input
+                  id="number"
+                  class="response"
+                  type="number"
+                  placeholder="number"
+                  min="1"
+                  max="10"
+                  required
+                />
               </div>
-              <div>
-                <label for="sometimes">
-                  <input
-                    id="sometimes"
-                    class="response"
-                    type="radio"
-                    name="choice"
-                    value="sometimes"
-                  />Sometimes
-                </label>
+              <div id="select-container" class="container-spacing">
+                <label id="dropdown-label" for="dropdown"
+                  >2. Would you go back in space without a permit?</label
+                >
+                <select id="dropdown" class="response">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
               </div>
-              <div>
-                <label for="often">
-                  <input
-                    id="often"
-                    class="response"
-                    type="radio"
-                    name="choice"
-                    value="often"
-                  />Often
-                </label>
+              <div id="radio-container" class="container-spacing">
+                <label id="radio-question-label"
+                  >3. How often did you encounter space debris during your
+                  trip?</label
+                >
+                <div>
+                  <label for="never">
+                    <input
+                      id="never"
+                      class="response"
+                      type="radio"
+                      name="choice"
+                      value="never"
+                    />Never
+                  </label>
+                </div>
+                <div>
+                  <label for="sometimes">
+                    <input
+                      id="sometimes"
+                      class="response"
+                      type="radio"
+                      name="choice"
+                      value="sometimes"
+                    />Sometimes
+                  </label>
+                </div>
+                <div>
+                  <label for="often">
+                    <input
+                      id="often"
+                      class="response"
+                      type="radio"
+                      name="choice"
+                      value="often"
+                    />Often
+                  </label>
+                </div>
+                <div>
+                  <label for="always">
+                    <input
+                      id="always"
+                      class="response"
+                      type="radio"
+                      name="choice"
+                      value="always"
+                    />Always
+                  </label>
+                </div>
               </div>
-              <div>
-                <label for="always">
-                  <input
-                    id="always"
-                    class="response"
-                    type="radio"
-                    name="choice"
-                    value="always"
-                  />Always
-                </label>
+              <div id="check-container" class="container-spacing">
+                <label id="check-question-label"
+                  >4. What are the best activities to do during the space
+                  trip?</label
+                >
+                <div>
+                  <label for="fly">
+                    <input
+                      id="fly"
+                      class="response"
+                      type="checkbox"
+                      name="activities"
+                      value="fly"
+                    />Fly
+                  </label>
+                </div>
+                <div>
+                  <label for="Restaurant">
+                    <input
+                      id="restaurant"
+                      class="response"
+                      type="checkbox"
+                      name="activities"
+                      value="restaurant"
+                    />Restaurant
+                  </label>
+                </div>
+                <div>
+                  <label for="spacetour">
+                    <input
+                      id="spacetour"
+                      class="response"
+                      type="checkbox"
+                      name="activities"
+                      value="spacetour"
+                    />SpaceTour
+                  </label>
+                </div>
+                <div>
+                  <label for="spaceshiprace">
+                    <input
+                      id="spaceshiprace"
+                      class="response"
+                      type="checkbox"
+                      name="activities"
+                      value="spaceshiprace"
+                    />Spaceship Race
+                  </label>
+                </div>
+                <div>
+                  <label for="scienceexperiment">
+                    <input
+                      id="scienceexperiment"
+                      class="response"
+                      type="checkbox"
+                      name="activities"
+                      value="scienceexperiment"
+                    />Science experiment
+                  </label>
+                </div>
+                <div>
+                  <label for="royalcasino">
+                    <input
+                      id="royalcasino"
+                      class="response"
+                      type="checkbox"
+                      name="activities"
+                      value="royalcasino"
+                    />Royal Casino
+                  </label>
+                </div>
               </div>
-            </div>
-            <div id="check-container" class="container-spacing">
-              <label id="check-question-label">4. What are the best activities to do during the space trip?</label>
-              <div>
-                <label for="fly">
-                  <input
-                    id="fly"
-                    class="response"
-                    type="checkbox"
-                    name="activities"
-                    value="fly"
-                  />Fly
-                </label>
-              </div>
-              <div>
-                <label for="Restaurant">
-                  <input
-                    id="restaurant"
-                    class="response"
-                    type="checkbox"
-                    name="activities"
-                    value="restaurant"
-                  />Restaurant
-                </label>
-              </div>
-              <div>
-                <label for="spacetour">
-                  <input
-                    id="spacetour"
-                    class="response"
-                    type="checkbox"
-                    name="activities"
-                    value="spacetour"
-                  />SpaceTour
-                </label>
-              </div>
-               <div>
-                <label for="spaceshiprace">
-                  <input
-                    id="spaceshiprace"
-                    class="response"
-                    type="checkbox"
-                    name="activities"
-                    value="spaceshiprace"
-                  />Spaceship Race
-                </label>
-              </div>
-               <div>
-                <label for="scienceexperiment">
-                  <input
-                    id="scienceexperiment"
-                    class="response"
-                    type="checkbox"
-                    name="activities"
-                    value="scienceexperiment"
-                  />Science experiment
-                </label>
-              </div>
-<div>
-                <label for="royalcasino">
-                  <input
-                    id="royalcasino"
-                    class="response"
-                    type="checkbox"
-                    name="activities"
-                    value="royalcasino"
-                  />Royal Casino
-                </label>
-              </div>
-            </div>
             </div>
             <div id="comment-container" class="container-spacing">
               <label id="text-area-label" for="text-area"

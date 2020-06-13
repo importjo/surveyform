@@ -48,17 +48,16 @@
   .response {
     margin-left: 20px !important;
   }
-  
-#name-container {
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-}
 
-#email-container {
-  border-top-right-radius: 0px !important;
-  margin-top: 0px !important;
-}
+  #name-container {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+  }
 
+  #email-container {
+    border-top-right-radius: 0px !important;
+    margin-top: 0px !important;
+  }
 }
 
 .response {
