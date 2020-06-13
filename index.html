@@ -16,7 +16,7 @@
         </div>
         <div>
         <form id="survey-form" action="/submit-form">
-          <div id="name">
+          <div id="name-container">
           <label id="name-label" for="name">Name:</label>
           <input
             type="text"
@@ -26,11 +26,11 @@
             required
           />
           </div>
-          <div id="email">
+          <div id="email-container">
           <label id="email-label" for="email">Email:</label>
           <input id="email" type="email" placeholder="email" required />
           </div>
-          <div id="number">
+          <div id="number-container">
           <label id="number-label" for="number">Number:</label>
           <input
             id="number"
@@ -41,14 +41,14 @@
             required
           />
           </div>
-          <div id="select">
+          <div id="select-container">
           <label id="dropdown-label" for="dropdown">List:</label>
           <select id="dropdown">
             <option value="test1">test1</option>
             <option value="test2">test2</option>
           </select>
           </div>
-          <div id="radio">
+          <div id="radio-container">
           <div>
           <label for="orange">
             <input id="orange" type="radio" name="fruit" value="orange" />Orange
@@ -60,7 +60,7 @@
           </label>
           </div>
           </div>
-          <div id="check">
+          <div id="check-container">
           <div>
           <label for="shy">
             <input id="shy" type="checkbox" name="personality" value="shy" />Shy
@@ -77,14 +77,14 @@
           </label>
           </div>
           </div>
-          <div id="comment">
+          <div id="comment-container">
           <label for="text-area">Tell us your story:</label>
           <textarea id="text-area" name="text-area" rows="5" cols="33">
 It was a dark and stormy night...
 </textarea
           >
           </div>
-          <div id="submit">
+          <div id="submit-container">
           <button id="submit" type="submit">Submit</button>
           </div>
         </form>

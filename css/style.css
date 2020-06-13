@@ -24,34 +24,34 @@
     "submit submit";
 }
 
-#name {
+#name-container {
   grid-area: name;
 }
 
-#email {
+#email-container {
   grid-area: email;
 }
 
-#number {
+#number-container {
   grid-area: number;
 }
 
-#select {
+#select-container {
   grid-area: select;
 }
 
-#radio {
+#radio-container {
   grid-area: radio;
 }
 
-#check {
+#check-container {
   grid-area: check;
 } 
 
-#comment {
+#comment-container {
   grid-area: comment;
 } 
 
-#submit {
+#submit-container {
   grid-area: submit;
 }
